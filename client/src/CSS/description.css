@@ -1,0 +1,107 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Added to distribute space evenly */
+}
+
+.movie-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.image-container {
+  flex: 0 0 45%;
+  max-width: 45%;
+  margin-right: 20px;
+  height: 50vh; /* Set the height of the image container */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure full image display without cropping */
+  border-radius: 5px;
+}
+
+.ratings-container {
+  flex: 1;
+  max-width: calc(55% - 20px); /* Adjusted width and spacing */
+  display: flex;
+  flex-direction: column;
+}
+
+.ratings-container h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ratings-container p {
+  margin-bottom: 15px;
+}
+
+.rating-section {
+  margin-top: auto; /* Push the rating section to the bottom */
+  text-align: center;
+}
+
+.rating-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rating-section select {
+  margin-bottom: 10px;
+}
+
+.rating-section button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.reviews-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.reviews-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.comment-container {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  max-height: 200px; /* Adjust the max-height as needed */
+  overflow-y: auto; /* Add vertical scroll if needed */
+}
+
+.comment-container p {
+  margin: 0;
+  word-wrap: break-word; /* Allow long words to break */
+  overflow-wrap: break-word; /* Improve word breaking behavior */
+}
+
+.comment-container .user-name {
+  font-weight: bold;
+}
+
+.comment-container .comment-text {
+  margin-top: 5px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

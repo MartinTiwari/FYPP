@@ -1,0 +1,72 @@
+/* Navbar.css */
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul.left-side {
+  display: flex;
+}
+
+nav ul.left-side li {
+  margin-right: 20px;
+}
+
+nav ul.right-side {
+  display: flex;
+  align-items: center;
+}
+
+nav ul.right-side li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: inherit;
+  transition: color 0.3s ease;
+}
+
+nav ul li button:hover {
+  color: #ffd700;
+}
+
+nav ul li:last-child {
+  background-color: #FF6347;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+nav ul li:last-child a {
+  color: #fff;
+}
+
+nav ul li:last-child a:hover {
+  color: #ffd700;
+}
